@@ -86,7 +86,9 @@ footer {
 	text-align: center;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	color: var(--primary-color);
 }
 
@@ -130,7 +132,8 @@ ul li {
 	margin: 64px 0;
 }
 
-.info-desc, .info-img {
+.info-desc,
+.info-img {
 	flex: 1;
 	/* width: 50%; */
 }
@@ -153,6 +156,13 @@ ul li {
 	.container {
 		max-width: 960px;
 	}
+
+	.info-group {
+		flex-direction: column;
+		gap: 20px;
+		margin: 64px 0;
+	}
+
 }
 
 @media screen and (max-width: 992px) {
