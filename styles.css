@@ -181,6 +181,18 @@ ul li {
 		padding: 0 16px;
 	}
 	h1 {
-		font-size: 1.45rem;
+		font-size: 1.375rem;
+	}
+	h3 {
+		font-size: 1.125rem;
+	}
+	p {
+		font-size: 0.875rem;
+	}
+	.header-desc {
+		display: none;
+	}
+	.info-section {
+		margin: 32px 0;
 	}
 }
