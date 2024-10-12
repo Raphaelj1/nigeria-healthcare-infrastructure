@@ -1,4 +1,36 @@
 :root {
+	/* Primary Colors */
+	--primary-color: #2e7d32; /* Deep Green */
+	--accent-color: #009688; /* Cool Teal */
+
+	/* Background Colors */
+	--background-color: #fafafa; /* Neutral White */
+	--section-bg-color: #f5f5f5; /* Light Gray */
+	--header-footer-bg-color: #1b5e20; /* Dark Green */
+
+	/* Text Colors */
+	--primary-text-color: #212121; /* Dark Charcoal */
+	--secondary-text-color: #616161; /* Grayish Black */
+	--link-color: #0288d1; /* Teal Blue */
+
+	/* Button Colors */
+	--primary-btn-bg: #2e7d32;
+	--primary-btn-text: #ffffff;
+	--secondary-btn-bg: #009688;
+	--secondary-btn-text: #ffffff;
+	--outline-btn-border: #2e7d32;
+	--outline-btn-text: #2e7d32;
+
+	/* Shadows & Borders */
+	--shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px;
+	--light-border: #e0e0e0;
+	--card-border: #bdbdbd;
+
+	/* Alert Colors */
+	--success-color: #388e3c;
+	--warning-color: #f57c00;
+	--error-color: #d32f2f;
+	--info-color: #1976d2;
 }
 
 * {
@@ -30,13 +62,14 @@ iframe {
 }
 
 header {
-	padding: 24px 40px 16px;
+	padding: 24px 32px 16px;
 	margin-bottom: 16px;
 }
 
 .header-logo-container {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 8px;
 }
 
 .header-logo {
@@ -45,6 +78,75 @@ header {
 
 .header-text {
 	text-align: center;
+}
+
+footer {
+	font-size: 14px;
+	padding: 16px 0;
+	text-align: center;
+}
+
+h1, h2, h3 {
+	color: var(--primary-color);
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin: 8px 0;
+}
+
+p {
+	font-size: 1rem;
+	margin: 8px 0;
+	color: var(--secondary-text-color);
+	line-height: 2;
+}
+
+a {
+	color: var(--primary-color);
+	text-underline-offset: 2px;
+}
+
+ul {
+	padding-left: 16px;
+	margin: 16px 0;
+}
+
+ul.numbered {
+	list-style: decimal;
+}
+
+ul li {
+	margin: 12px 0;
+}
+
+.info-section {
+	margin: 48px 0;
+}
+
+.info-group {
+	display: flex;
+	gap: 32px;
+	margin: 64px 0;
+}
+
+.info-desc, .info-img {
+	flex: 1;
+	/* width: 50%; */
+}
+
+.info-img img {
+	width: 100%;
+	object-fit: contain;
+}
+
+.info-img-fixed img {
+	max-width: 300px;
+	object-fit: cover;
+}
+
+.info-desc li {
+	list-style-type: none;
 }
 
 @media screen and (max-width: 1200px) {
