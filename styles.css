@@ -163,6 +163,10 @@ ul li {
 		margin: 64px 0;
 	}
 
+	footer {
+		font-size: 0.75rem;
+		color: var(--primary-text-color);
+	}
 }
 
 @media screen and (max-width: 992px) {
