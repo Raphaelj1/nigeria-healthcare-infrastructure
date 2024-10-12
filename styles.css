@@ -180,4 +180,7 @@ ul li {
 		max-width: 540px;
 		padding: 0 16px;
 	}
+	h1 {
+		font-size: 1.45rem;
+	}
 }
